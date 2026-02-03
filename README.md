@@ -1,56 +1,29 @@
-# Qwirty
+Overview
+You have been recently hired at FullStack Solutions as a junior developer. Your project manager, Calliope, sends you the following email to welcome you to the team and provide details on your first assignment. 
 
-We've now covered the basics of HTML and CSS. Let's put it all together!
-In this review activity, you will be recreating a standard e-commerce site.
-You can visit [the live Qwirty demo](https://fsa-qwirty.netlify.app/) to see
-the end goal. Get as close as you can!
+An email from calliope saying "Welcome to FullStack Solutions! We’re so happy you are joining our team.  I’m Calliope, your team’s project manager. Fullstack Solutions is currently competing for several different contracts to build web apps, including corporate websites, startup proofs-of-concept, and enhancements to some portals for our local government. As part of the process we are submitting brief bios and portfolios for each team member. Submit a Github link to your working repository in our ticket tracker before the end of the day, and let me know if you need any help or clarification!"
 
-## Instructions
+Calliope has asked you to create a personal site with a brief bio. It is a chance to show off who you are, what you are about, and what you have accomplished. We will focus on three main areas: the landing page, an about page, and a portfolio page. The goal is to assess your ability to  write semantic HTML and CSS.
 
-1. Create a new repository under your GitHub account using this one as a template.
-2. Open the cloned repository in VS Code.
-3. Build!
+You can visit Gustavo's Personal SiteLinks to an external site. to see an example of what to build.
 
-## Tips
+🏠 Home Page 
+The landing page is your first impression. You can include a photo, your mission statement, and something which defines you. In our example, we have included a quote.
 
-While you are free to tackle this however you'd like, here are some tips:
+👤 About Page
+An about page is a place for people to get to know you. You should include your interests, and things you are good at, and in general you should pull back enough of the curtain into your life to interest a potential employer in you as a person.
 
-- Break the website down into smaller components and focus on completing each component.
-- Use separate css files for each component to stay organized.
-- Use a combination of flex and grid to arrange the elements on the page.
-- Make frequent commits as you work.
-- As a last resort, you can always inspect the live demo. However, try to build
-  as much as you can from scratch first!
+🖼️ Portfolio Page
+The portfolio page is the meat and potatoes of your personal site, here you want to include the projects you have worked on. For each project you wish to showcase, you should include the name of your project, a brief description, a screenshot, and a link to where it lives on the web.
 
-### Use an external font
+📨 Contact Form
+The contact form page allows visitors to leave you a message. The form should include fields such as their name, their email, and the message that they are sending. The form does not need to be functional!
 
-[Google Fonts](https://fonts.google.com/) is a popular resource where you can get
-external fonts to use in your website. After selecting a font, **get embed code**
-to get `<link>` elements to add in the `<head>` of your HTML. Once that is done,
-you can refer to the name of that font in the `font-family` property in your CSS.
+Note: While you may use Lorem Ipsum for placeholder content, it would be great if you included actual information about yourself!
 
-### Use an icon font
-
-Google Fonts also provides an [icon font](https://fonts.google.com/icons)!
-
-1. Select an icon that you want to use.
-2. Add the provided `<link>` element in the `<head>` of your HTML.
-3. Add the provided CSS rule to your CSS.
-4. Insert the icon as a `<span>` with the provided class.
-   The text contents of that span should match the icon you want to use.
-
-### Show or hide an element
-
-You can use the CSS property [`display`](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
-to change the visibility of an element. By combining it with a pseudoclass like
-`:hover` or a media query, you can make an element appear or disappear based on some condition.
-
-```css
-.example:hover {
-  display: none;
-}
-```
-
-## Submission
-
-On Canvas, submit a link to your public GitHub repository.
+Getting Started
+Look at the example siteLinks to an external site. to get an idea of what you are tasked with building.
+Review the rubric at the bottom of this page, which lists all the requirements.
+Create a repository on github from scratch and get to work!
+Submission
+For this assignment, you will have to make a pull request from your fork into the main branch of the starter repo. The title of your pull request should include your full name. Submit a link to your pull request.
