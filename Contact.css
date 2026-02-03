@@ -1,0 +1,145 @@
+header{
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+    border-bottom:1px;
+    margin-left:0px;
+    background-color: rgb(65, 60, 170);    
+    border-color:black;
+    border-style:solid;
+    max-width:100%;
+    margin-bottom:10px;
+}
+
+.headercontainer{
+    max-width:1200px;
+    display:flex;   
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2px;
+}
+
+.navclassleft{
+    display:flex;  
+    text-transform: uppercase;  
+    padding:5px;
+    margin-left: 10px;
+}
+.mainname {
+    color: white;                 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;             
+    padding-top: 5px;
+}
+
+.navclassright{
+    display:flex;   
+    text-transform: none; 
+    padding:5px;
+    margin-left: 10px;
+}
+.navclassitems{    
+    color:white;
+    text-decoration: none;      
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;    
+    padding-top:5px;
+}
+.navclassitems:not(:last-child)::after {
+    content: "|";
+    margin: 4px;  
+    color: white;  
+}
+
+
+
+body {
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main{
+    flex:1;
+    width: 600px;
+    margin-left: auto;
+    margin-right:auto;    
+}
+
+main h1{
+    margin-top: 0px;
+    margin-bottom:5px;
+
+}
+main p{    
+    margin:0px;
+    margin-top:0px;
+}
+main img{
+    margin:0;
+    width: 600px;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+}
+main input{
+    margin-bottom: 10px;
+}
+main textarea{
+    min-height: 100px;
+    padding:4px;
+}
+main button{
+    color:white;
+    background-color: rgb(65, 60, 170);
+    border-radius: 3px;
+    border: 1px solid grey;
+    padding-top: 3px;
+    padding-bottom:3px;
+    margin-top:3px;
+}
+main button:hover{
+    cursor: pointer;
+    background-color: rgb(21, 16, 119);
+}
+
+
+
+
+
+footer{
+    background-color: rgb(65, 60, 170);
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    font-size: 10pt;
+    text-align: center;
+    padding-bottom:8px;
+    padding-top:5px;    
+}
+footer p{
+    margin:0px;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .headercontainer{        
+        display:flex;   
+        flex-direction: column;
+        align-items: center;
+    }
+    .navclassright{
+        display:flex;   
+        flex-direction: column;
+        align-items: center; 
+        margin-top: -10px;
+    }
+    .navclassitems:not(:last-child)::after {
+        content: none;
+    }
+
+
+}
