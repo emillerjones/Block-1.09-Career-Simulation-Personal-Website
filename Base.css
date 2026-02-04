@@ -1,0 +1,115 @@
+header{
+    border-left:0px;
+    border-right:0px;
+    border-top:0px;
+    border-bottom:1px;
+    margin-left:0px;
+    /* background-color: rgb(65, 60, 170);     */
+    background-color: #2f2f3a;
+    border-color:black;
+    border-style:solid;
+    
+    max-width:100%;
+    margin-bottom:10px;
+}
+
+.headercontainer{
+    max-width:900px;
+    display:flex;   
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:2px;
+}
+
+.navclassleft{
+    display:flex;  
+    text-transform: uppercase;  
+    padding:5px;
+    margin-left: 10px;
+}
+.mainname {
+    color: white;                 
+    opacity: 0.7;
+    font-size: 11pt;             
+    padding-top: 5px;
+}
+
+.navclassright{
+    display:flex;   
+    text-transform: none; 
+    padding:5px;
+    margin-left: 10px;
+    margin-right:10px;
+}
+.navclassitems{    
+    color:white;
+    opacity: 0.7;
+    text-decoration: none;      
+    
+    font-size: 10pt;    
+    padding-top:5px;
+}
+.navclassitems:not(:last-child)::after {
+    content: "|";
+    margin: 4px;  
+    color: white;  
+}
+.navclassitems:hover{
+    opacity: 1;
+    /* text-decoration: underline; */
+    /* font-weight: 600; */
+}
+
+
+
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #2f2f3a; */
+}
+main{
+    flex:1;
+}
+
+
+
+
+
+
+footer{
+    background-color: #2f2f3a;    
+    color:white;
+    font-size: 10pt;    
+    text-align: center;
+    padding-bottom:8px;
+    padding-top:5px;    
+}
+footer p{
+    margin:0px;
+    opacity: 0.7;
+}
+
+
+
+@media (max-width: 650px) {
+
+    .headercontainer{        
+        display:flex;   
+        flex-direction: column;
+        align-items: center;
+    }
+    .navclassright{
+        display:flex;   
+        flex-direction: column;
+        align-items: center; 
+        margin-top: -10px;
+    }
+    .navclassitems:not(:last-child)::after {
+        content: none;
+    }
+}
