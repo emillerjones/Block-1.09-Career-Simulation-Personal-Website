@@ -14,7 +14,7 @@ main{
 
 .homegrid{
     display:grid;
-    grid-template-columns: 350px 300px;
+    grid-template-columns: 350px 350px;
     /* grid-template-rows: 50px 125px 60px; */
     grid-template-rows: auto auto auto;
     justify-content: center;
@@ -32,7 +32,7 @@ main{
 }
 .abouttext{
     margin:0;
-    margin-top:-10px;
+    margin-top:-7px;
     padding:0;
     grid-column:1/2;
     grid-row:2/3;
@@ -44,17 +44,18 @@ main{
     letter-spacing: 0.5px;
 }
 .abouttext p + p{
-    margin-top: 25px; /* space only between paragraphs */
+    margin-top: 30px; /* space only between paragraphs */
 }
 
 .homegrid img{
     margin:0;
     border-radius:15px;    
-    /* grid-column:2/3;
-    grid-row:2/3;   */
-    width:300px;  
-    max-height: 200px;
-    justify-self: end;
+    /* max-width: 100%; */
+
+    width:100%;   
+    height:225px;
+    
+    /* justify-self: center; */
     object-fit: cover;
     object-position: left top;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.425);
@@ -73,7 +74,7 @@ main{
     margin: 0px;
     border-radius:15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.425);
-    margin-top: 35px;
+    margin-top: 17px;
 }
 .homegrid blockquote{
     text-align: left;
@@ -81,17 +82,19 @@ main{
     margin-top:10px;
     margin-left:10px;
     letter-spacing: 0.5px;
-    padding:4px;
+    padding:10px;
+    padding-top:10px;
     font-size: 10pt;
 }
 .homegrid figcaption{
     text-align: right;
     margin-right:10px;
-    padding-left:4px;
-    padding-right: 4px;;
+    padding-left:5px;
+    padding-right: 5px;;
     padding-bottom: 10px;
     font-style: italic;
     font-size: 10pt;
+    color:rgb(50, 50, 50);
 }
 
 
@@ -99,7 +102,7 @@ main{
 
 
 .projects-preview-header{
-    max-width: 650px;
+    max-width: 720px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -116,24 +119,38 @@ main{
 }
 .project-grid{
     display: grid;
-    grid-template-columns: repeat(2, 360px);
-    gap: 24px;
+    /* width:700px; */
+    grid-template-columns: repeat(2, auto);
+    /* grid-template-columns: 350px  350px; */
+    /* gap: 24px; */
+    /* justify-content: space-between; */
+
     justify-content: center;
+    
+    margin:0;
+    margin-top:10px;
+    margin-bottom:20px;
+    gap:20px;
+
 }
 .project-tile{
-    width:300px;
+    width:350px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.425);
     display:grid;
     border-radius: 10px;
 }
 .project-tile img{
-    width:200px;
-    grid-column:2/3;
+    width:100%;
+    grid-column:1;
     grid-row:1/1;   
+    border-radius: 10px;
+    /* padding:5px; */
 }
 .project-text{
-    grid-column:1/2;
-    grid-row:1/1;   
+    grid-column:1;
+    grid-row:2/3;   
+    padding:5px;
+    font-size: 9pt;
 }
 
 
@@ -144,7 +161,7 @@ main{
 
 
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .homegrid {
         display:grid;
         grid-template-columns: 1fr;
@@ -157,7 +174,8 @@ main{
         grid-column: 1;
         grid-row: 1;
         font-size: 20pt;      
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        margin-top:-15px;
         text-align: center;
     }
     .rightblock{
@@ -167,6 +185,7 @@ main{
         gap: 16px;
         justify-items: center;
         margin-bottom: 15px;
+        
     }
  
     .abouttext{
@@ -178,15 +197,15 @@ main{
     .homegrid img{
         margin:0;
         width: 100%;          /* ← responsive */
-        max-width: 600px;     /* ← cap it */
+        max-width: 750px;     /* ← cap it */
         height: 400px;
         max-height: none;
         justify-self: center;
         object-fit: cover;
     }
     .homegrid figure{
-        order:4;
         border-style:solid;
+        width:100%;
         border-color: rgb(65, 60, 170);
         margin: 0px;
     }
