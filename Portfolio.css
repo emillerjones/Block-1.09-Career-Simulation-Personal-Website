@@ -24,7 +24,9 @@ main h1{
 
 
 .maintile{
-    border:2px solid rgb(65, 60, 170);    
+    border:2px solid rgb(65, 60, 170);  
+    border-radius: 5px;
+    margin-bottom:5px;  
 }
 main h2{
     margin:0;
@@ -38,10 +40,12 @@ main h2{
 }
 .mainimage{
     margin:5px;
+    
 }
 main img{
     margin:0;    
     max-width: 100%;
+    border-radius: 5px;
 }
 main p{    
     margin:5px;
